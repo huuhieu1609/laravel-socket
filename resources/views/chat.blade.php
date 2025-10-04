@@ -765,8 +765,6 @@
                         this.messages.push(response.data.data);
                         this.newMessage = '';
                         this.scrollToBottom();
-
-                        // Cập nhật tin nhắn cuối cùng trong danh sách phòng
                         const roomIndex = this.rooms.findIndex(r => r.id === this.selectedRoom.id);
                         if (roomIndex !== -1) {
                             this.rooms[roomIndex].last_message = response.data.data;

@@ -148,7 +148,6 @@
             </div>
 
             <div class="form-container">
-                <!-- Login Form -->
                 <div v-if="!isRegister">
                     <h2 style="margin-bottom: 20px; color: #333;">Đăng nhập</h2>
                     <div class="form-group">
@@ -166,8 +165,6 @@
                         <button @click="isRegister = true">Chưa có tài khoản? Đăng ký ngay</button>
                     </div>
                 </div>
-
-                <!-- Register Form -->
                 <div v-else>
                     <h2 style="margin-bottom: 20px; color: #333;">Đăng ký</h2>
                     <div class="form-group">
@@ -193,8 +190,6 @@
                         <button @click="isRegister = false">Đã có tài khoản? Đăng nhập</button>
                     </div>
                 </div>
-
-                <!-- Messages -->
                 <div v-if="message" :class="messageType" style="margin-top: 15px;">
                     @{{ message }}
                 </div>
